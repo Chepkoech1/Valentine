@@ -1,0 +1,67 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7e0e0;
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.question p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #5c3d3d;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: #ffadad;
+  border: none;
+  color: #5c3d3d;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff7f7f;
+}
+
+.reaction {
+  margin-top: 50px;
+  font-size: 48px;
+  color: #5c3d3d;
+}
+
+
+
+
+
+.balloon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation: floatBalloon 5s ease-in-out infinite;
+}
+
+@keyframes floatBalloon {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-100vh) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
+}
+
