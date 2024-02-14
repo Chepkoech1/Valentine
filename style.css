@@ -6,7 +6,6 @@ body {
 .container {
   text-align: center;
   margin-top: 50px;
-  position: relative;
 }
 
 .question p {
@@ -40,28 +39,3 @@ button:hover {
   font-size: 48px;
   color: #5c3d3d;
 }
-
-
-
-
-
-.balloon {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  animation: floatBalloon 5s ease-in-out infinite;
-}
-
-@keyframes floatBalloon {
-  0% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-100vh) rotate(0deg);
-  }
-  100% {
-    transform: translateY(0) rotate(360deg);
-  }
-}
-
